@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapitre 5 : Système de Gestion de Version</title>
+    </head>
+
+    <body>
+        <h1>Chapitre 5 : Système de Gestion de Version</h1>
+        <h2>1) Introduction :</h2>
+        <p>
+            Qu’est-ce que Git ? Git est un logiciel de versioning (ou gestion de version) créé en 2005 par le créateur
+            de linux
+            Linus Torvalds, ce logiciel permet de conserver un historique des modifications effectuées
+            sur un projet et de revenir à l’ancienne version en cas de problème.
+            Actuellement tous les logiciels de gestion de version sont incontournables car ils facilitent la
+            gestion de projets et permettent en équipe de manière, le Git est leader incontesté parmi les
+            logiciels utiliser et indispensable pour tous les développeurs.
+        </p>
+        <h2>2) A quoi sert concrètement un système de gestion de version ?</h2>
+        <p>
+            Les logiciels de version et Git en particulier on vont permettre d’effectuer les opération de
+            manière plus robuste et avec des nombreuses fonctionnalités supplémentaires très utiles
+            comme la possibilité de synchroniser un dossier locale avec le serveur, connexion aux autres
+            projets et mise à jour de différences automatisée, le Git est permet aussi de coordonner le
+            travail de plusieurs personnes en conservant un historiques des changements effectués sur
+            de fichiers et de coexister à différentes version d’un même fichier(travaille de groupe).
+        </p>
+        <h2>3) Les deux modèles de gestion de version :</h2>
+        <p>
+            *le modèle centralisé : le source du code du projet est hébergée sur un serveur distant
+            central et les différents utilisateurs doivent se connecter à ce serveur pour travailler sur ce
+            code.
+        </p>
+        <p>
+            *le modèle décentralisé (ou distribué) : le source de code du projet est toujours hébergée sur
+            un serveur distant mais chaque utilisateur est invité à télécharger et à héberger l’intégralité
+            du code source du projet su sa propre machine, ce modèle a été popularisé par Git et
+            présente différents avantages :
+            Simplicité –flexibilité de travail : comme chaque utilisateur peut héberger le code du projet,
+            sans connecter à un serveur central et donc travailler directement sur sa propre machine.
+            Sécurité : c’est-à-dire chaque utilisateur possède le code complet d’un projet, donc on peut
+            utiliser la copie de projet comme back-up en cas de corruption du serveur centrale.
+        </p>
+        <h2>4) Qu’est-ce que Git Hub ?</h2>
+        <p>
+            Git Hub un grand service en ligne d’hébergement de dépôt Git qui fait office de serveur
+            centrale pour ces dépôts donc on peut télécharger le code de ces dépôts et contribuer à leur
+            développement en proposants de nouvelles fonctionnalités.
+        </p>
+        <h2>5) Utiliser Git : ligne de commande, console et interface graphique</h2>
+        <p>
+            On utiliser différents d’interfaces pour installer et pour utilise Git comme la console est un
+            langage en ligne de commande.
+        </p>
+        <p>
+            Pour la ligne de commande :
+        </p>
+        <ul>
+            <li>le seul moyen d’avoir accès à toutes les commandes Git.</li>
+            <li>tout le monde pourra suivre ce cours de la même commande avec le linge de commande.</li>
+        </ul>
+        <p>
+            Si vous savez comment utiliser la version en ligne de commande, vous saurer utiliser
+            n’importe interface graphique.
+        </p>
+        <p>
+            En Windows, pour ouvrir ligne de commande :
+        </p>
+        <ol>
+            <li>Raccourcie : windows+R+cmd</li>
+            <li>dans la barre de recherche, recherche cmd</li>
+        </ol>
+
+        <h2>6) Installation de Git</h2>
+        <p>
+            Pour installer Git télécharger la dernière version sur le site officiel
+            <a href="http://gitscm.com/downloads">http://gitscm.com/downloads</a>,
+            après ouvrir le fichier téléchargé et de suivre les instructions à l’écran en laissant toutes les valeurs
+            par
+            défaut.
+        </p>
+
+        <h2>7) paramétrage de Git</h2>
+        <p>
+            Après l’installation de Git, nous allons paramétrer le logiciel afin d’enregistrer certaines
+            données pour ne pas avoir à les fournir à nouveau plus tard et renseigner le nom d’utilisateur
+            et son adresse mail que Git devra utiliser.
+        </p>
+        <ol>
+            <li>Utiliser première commande Git (git config) qui permet de voir et modifier les variables de
+                configuration qui
+                contrôlent tous les aspects de l’apparence et du comportement de Git.</li>
+            <li>Utiliser une option (--global) à notre commande permettant de personnaliser le comportement par défaut
+                de
+                certaines commandes et indique à Git le nom d’utilisateur et l’adresse mail renseignés doivent être
+                utilisés
+                globalement.</li>
+            <li>Taper les command suivant pour voir sur l’écran git config --global user.name « Bouchekir Redouane » et
+                git
+                config --global user.email redouane.bouchekir@gmail.com</li>
+            <li>Pour vous assurer que vos informations ont bien été enregistrées, vous pouvez taper git config user.name
+                et git
+                config user.email. Les informations entrées devraient être renvoyées.</li>
+        </ol>
+
+        <h2>8) Démarrer un dépôt Git :</h2>
+        <p>Un « dépôt » est importer un projet dans Git, et pour crée un dépôt Git y a 2 façon :</p>
+        <ul>
+            <li>Importer un répertoire existant dans Git.</li>
+            <li>Cloner un dépôt Git déjà existant.</li>
+        </ul>
+        <h2>9) La gestion des informations selon Git :</h2>
+        <p>Au moment de la validation ou l’enregistrement de l’état de projet dans Git, il prendra un snapshot sur le
+            contenu de
+            l’espace de travail et l’enregistre pour puisse revenir (historique). Cela nous permet de réaliser des
+            opérations
+            localement. Ces snapshots sont stocké dans notre machine.</p>
+        <h2>10) Les états des fichiers :</h2>
+        <p>Un fichier dans Git peut avoir deux états, suivi (si il est enregistré en base) ou non suivi (n’a pas été
+            indexé).
+        </p>
+        <p>Lors démarrage d’un dépôt Git les fichiers sont non suivi, donc on demande à Git de les indexer. Le fichier
+            suivi va
+            avoir l’un de ces états :</p>
+        <ul>
+            <li>Modifié (“modified”)</li>
+            <li>Indexé (“staged”)</li>
+            <li>Validé (“committed”)</li>
+        </ul>
+        <p>Après le démarrage d’un dépôt Git on demande à Git de valider le fichier, lors du travail sur le projet,
+            lorsqu’on
+            modifie un fichier il va être considéré comme “modifié” par Git, tandis que les nouveaux fichiers qu’on les
+            ajoute
+            vont être non suivis. Le fichier serra “indexe” lors de l’indication à Git que le fichier modifié ou que le
+            nouveau
+            fichier doit faire partie du prochain instantané dans sa version actuelle. Et quand Git prend l’instantané
+            les
+            fichiers instantanés seront “Validé” de nouveau. (Ce cycle peut recommencer)</p>
+        <h2>11) Les zones de travail :</h2>
+        <p>Les états de fichiers sont liés à des zones de travail dans Git. Un projet Git est composé de 3 sections :
+        </p>
+        <ol>
+            <li>Working tree : ou le répertoire du travail, c’est une extraction unique (“checkout”) d’une version du
+                projet.
+            </li>
+            <li>Staging area : ou la zone d’index, c’est un fichier qui stocke les informations concernant ce qui fera
+                partie du
+                prochain instantané ou du prochain “commit”</li>
+            <li>Repository : C’est la partie principale ou le cœur de Git.</li>

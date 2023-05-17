@@ -1,0 +1,190 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header section */
+
+header {
+    background-color: #17AAAA;
+
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+
+}
+
+
+img {
+    width: 125px;
+    height: 90px;
+}
+
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Home section */
+
+#home {
+    background-color: #EEEEEE;
+    padding: 50px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+/* About section */
+
+#about {
+    background-color: #FFA42E;
+    padding: 50px;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Summaries section */
+
+#summaries {
+    background-color: #EEEEEE;
+    padding: 50px;
+}
+
+#summaries h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#summaries ul {
+    margin-bottom: 20px;
+}
+
+#summaries li {
+    margin-bottom: 10px;
+}
+
+#summaries a {
+    font-size: 18px;
+    color: #000;
+}
+
+#summaries a:hover {
+    text-decoration: underline;
+}
+
+/* Review section */
+
+#review {
+    background-color: #17AAAA;
+    padding: 50px;
+}
+
+#review h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#review p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+#review form {
+    margin-top: 20px;
+}
+
+#review label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#review input,
+#review textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#review input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#review input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Footer section */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.student-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.student-list li:nth-child(12) {
+    text-align: right;
+}
